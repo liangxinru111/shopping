@@ -1,0 +1,136 @@
+/* 列表页专有的CSS */
+.nav {
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.sk_container {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: 47px;
+    font-weight: 700;
+    padding: 0 30px;
+    color: black;
+}
+.sk_con {
+    float: left;
+    margin-left: 30px;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    font-size: 14px;
+    /* 让文字稍微偏下 */
+    line-height: 49px;
+    padding: 0 20px;
+}
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+.sk_bd ul li{
+    float: left;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+    margin-right: 12px;
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li:hover{
+    border: 1px solid #c81523;
+}
+.sk_bd ul li img {
+    margin-top: 33px;
+    margin-left: 75px;
+}
+.sk_bd ul li .pizhu {
+    display: block;
+    margin: 5px 12px 2px 12px;
+    font-size: 14px;
+    color: #666666;
+}
+.sk_bd ul li .miaosha {
+    margin-left: 12px;
+    font-size: 22px;
+    color: #e60012;
+    font-weight: 700;
+}
+.sk_bd ul li .origan {
+    font-size: 14px;
+    color: #a4a4a4;
+    /* 删除线 */
+    text-decoration: line-through;
+}
+.sk_bd ul li .guodu {
+    width: 288px;
+    height: 35px;
+}
+.sk_bd ul li .guodu1 {
+    float: left;
+    font-size: 14px;
+    color: #666666;
+}
+.sk_bd ul li .guodu2 {
+    float: left;
+    margin-left: 12px;
+    margin-top: 5px;
+    width: 135px;
+    height: 12px;
+    border: 1px solid #e60012;
+    border-radius: 6px;
+}
+.sk_bd ul li .guodu2_in {
+    width: 87%;
+    height: 11px;
+    border-radius: 6px;
+    background-color: #e60012;
+    /* 谁做过渡给谁加 */
+    transition: all 0.5s
+}
+.sk_bd ul li .guodu2:hover .guodu2_in{
+    width: 100%;
+}
+.shengyu1 {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #666666;
+}
+.shengyu2 {
+    font-size: 14px;
+    color: #e12228;
+    margin-left: -2px;
+}
+.shengyu3 {
+    margin-left: -2px;
+    font-size: 14px;
+    color: #666666;
+}
+.sk_bd ul li .buy{
+    display: block;
+    width: 288px;
+    height: 50px;
+    background-color: #b1191a;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}

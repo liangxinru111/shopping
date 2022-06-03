@@ -1,0 +1,325 @@
+/* 声明字体图标，这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?1lv3na');
+    src: url('../fonts/icomoon.eot?1lv3na#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?1lv3na') format('truetype'),
+        url('../fonts/icomoon.woff?1lv3na') format('woff'),
+        url('../fonts/icomoon.svg?1lv3na#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: red;
+}
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+/* 选择所有的偶数的小li */
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+
+/* header头部制作 */
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+    /* 让文字隐藏 */
+    /* font-size: 0;   京东的做法 */
+    /* 淘宝的做法 */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    /* input和button都属于行内块元素，需要加浮动取消两个之间的间隔 */
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 35px;
+    margin-top: -1px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.shopcar::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+
+/* nav模块制作 */
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    width: 210px;
+    height: 46px;
+    background-color: #b1191a;
+}
+
+.nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+}
+
+.nav .dropdown .dd {
+    /* 隐藏 */
+  /*   display: none; */
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+}
+
+.nav .dropdown .dd ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    /* 目的是当鼠标放上去时会有一个10px的左边框 */
+    padding-left: 10px;
+}
+
+.nav .dropdown .dd ul li:hover {
+    background-color: #fff;
+}
+
+.nav .dropdown .dd ul li::after {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    content: '\e920';
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav .dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.nav .dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.nav .navitems ul li {
+    float: left;
+}
+
+.nav .navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+
+/* 底部模块制作 */
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+.mod_service ul li .tu1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+    margin-right: 8px;
+}
+
+.mod_service ul li .tu2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -254px -54px;
+    margin-right: 8px;
+}
+
+.mod_service ul li .tu3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -256px -105px;
+    margin-right: 8px;
+}
+
+.mod_service ul li .tu4 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -258px -156px;
+    margin-right: 8px;
+}
+
+.mod_service ul li .tu5 {
+    float: left;
+    width: 54px;
+    height: 51px;
+    background: url(../images/icons.png) no-repeat -258px -208px;
+    margin-right: 8px;
+}
+
+.service_txt h4 {
+    font-size: 14px;
+}
+
+.service_txt p {
+    font-size: 12px;
+}
+.mod_help{
+    height: 185px;
+    padding-top: 20px;
+    padding-left: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+/* 选定最后一个dl */
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.links {
+    margin-bottom: 15px;
+}
+.links a {
+    margin: 0 5px;
+}
+.copyright {
+    line-height: 20px;
+}
